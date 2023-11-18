@@ -9,5 +9,5 @@ class Shape:
     def update(self):
         pass
 
-class Block:
+class Block():
     pass 

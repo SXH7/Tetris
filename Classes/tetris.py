@@ -7,14 +7,16 @@ import math
 class Tetris:
     def __init__(self, app):
         self.app = app
+        self.sprite = pygame.sprite.Group()
         self.shape = Shape(self)
 
     def update(self):
         self.shape.update()
+        self.sprite.update()
 
     def draw(self):
         self.drawgrid()
-        pass
+        self.sprite.draw(self.app.screen)
 
     def drawgrid(self):
         for x in range(FIELD_W):
