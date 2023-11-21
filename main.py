@@ -8,7 +8,7 @@ class Game:
         pygame.init()
         self.screen = pygame.display.set_mode(FIELD_RES)
         self.clock = pygame.time.Clock()
-        self.tetris = Tetris(self)
+        self.tetris = Tetris(self)  
     
     def update(self):
         self.tetris.update()

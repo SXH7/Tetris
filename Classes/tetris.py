@@ -17,6 +17,7 @@ class Tetris:
     def draw(self):
         self.drawgrid()
         self.sprite.draw(self.app.screen)
+        
 
     def drawgrid(self):
         for x in range(FIELD_W):
